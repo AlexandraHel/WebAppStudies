@@ -4,12 +4,12 @@ using Encryption.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddRazorPages();
+builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
 builder.Configuration.AddSecrets(builder.Environment);
 builder.Services.AddEncryptions(builder.Configuration);
 builder.Services.AddVersionInfo();
-builder.Services.AddEnvironmentInfo();
+builder.Services.AddEnvironmentInfo(); 
 
 #region Setup the Dependency service
 builder.Services.AddSingleton<IQuoteService, QuoteService>();
