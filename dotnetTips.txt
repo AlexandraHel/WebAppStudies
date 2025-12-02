@@ -1,7 +1,7 @@
 In the directory open a terminal and type
 dotnet new class -n TestClass
 
-New Razor Page with Model. 
+New Razor Page with Model. (Ställ dig i bibl du vill ha t.ex.? Pages)
 dotnet new page -n TestPage
 
 Mvc 
